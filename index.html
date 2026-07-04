@@ -103,12 +103,16 @@
       ============================================================ -->
       <div class="hero-media">
         <div class="carousel" id="carousel">
-          <div class="slide active" style="background-image:url('media/F85_9436.jpg')"></div>
-          <div class="slide" style="background-image:url('media/G85_6804.jpg')"></div>
+          <!-- Order: highcontranst, 6804, 9436, 1404, 2260, purple, 7504 -->
+          <div class="slide active" style="background-image:url('media/highcontranst.png'); background-position:center 60%;"></div>
+          <div class="slide" style="background-image:url('media/G85_6804.jpg'); background-position:center 20%;"></div>
+          <div class="slide" style="background-image:url('media/F85_9436.jpg')"></div>
           <div class="slide" style="background-image:url('media/H85_1404.jpg')"></div>
-          <div class="slide" style="background-image:url('media/H85_2260.jpg')"></div>
-          <div class="slide" style="background-image:url('media/highcontranst.png')"></div>
+          <!-- EDIT ME: this one is more landscape/group-shot than the others, so cover crops
+               a lot off the left/right sides — swap in a taller crop of this photo if you have one -->
+          <div class="slide" style="background-image:url('media/H85_2260.jpg'); background-position:40% center;"></div>
           <div class="slide" style="background-image:url('media/purple.png')"></div>
+          <div class="slide" style="background-image:url('media/F85_7504.jpg')"></div>
 
           <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous slide">&#8249;</button>
           <button class="carousel-arrow next" id="nextBtn" aria-label="Next slide">&#8250;</button>
@@ -120,6 +124,7 @@
             <button class="dot" data-index="3" aria-label="Slide 4"></button>
             <button class="dot" data-index="4" aria-label="Slide 5"></button>
             <button class="dot" data-index="5" aria-label="Slide 6"></button>
+            <button class="dot" data-index="6" aria-label="Slide 7"></button>
           </div>
         </div>
       </div>

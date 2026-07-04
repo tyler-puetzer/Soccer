@@ -291,31 +291,14 @@ img { max-width: 100%; display: block; }
   inset: 0;
   opacity: 0;
   transition: opacity 0.5s ease;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-bg-alt); /* shows briefly while an image loads */
 }
 .slide.active { opacity: 1; }
 
-/* EDIT ME: delete .slide-placeholder and instead set a background-image
-   directly on .slide (e.g. background: url('photo.jpg') center/cover;) */
-.slide-placeholder {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  text-align: center;
-  padding: 24px;
-  background: linear-gradient(160deg, #1c3f70, #0b1a33);
-  color: var(--color-muted);
-}
-.slide-placeholder span {
-  font-family: var(--font-display);
-  font-size: 1.2rem;
-  color: var(--color-chalk);
-  letter-spacing: 0.02em;
-}
-.slide-placeholder small { font-size: 0.75rem; }
+/* NOTE: .slide-placeholder styles removed — no longer needed now that
+   real photos are set as background-images directly on .slide (see HTML). */
 
 .carousel-arrow {
   position: absolute;

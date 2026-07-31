@@ -609,3 +609,228 @@ img { max-width: 100%; display: block; }
   .stat-strip { grid-template-columns: repeat(2, 1fr); }
   .stat:nth-child(2n) { border-right: none; }
 }
+
+/* ==================================================================
+   SUB-NAV (soccer.html page) — jump links + team badge links,
+   sits directly under the main sticky nav.
+=================================================================== */
+.subnav {
+  border-top: 1px solid var(--color-line);
+  background: rgba(8,18,34,0.6);
+}
+.subnav-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+.subnav-jumps { display: flex; gap: 24px; }
+.subnav-jumps a {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--color-muted);
+  transition: color 0.2s ease;
+}
+.subnav-jumps a:hover { color: var(--color-blue); }
+
+.subnav-teams { display: flex; gap: 10px; }
+.team-badge { display: block; }
+/* EDIT ME: replace this placeholder span with an <img> of your team's
+   actual crest once you have the logo file + permission to use it */
+.team-badge-placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--color-line);
+  font-family: var(--font-mono);
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--color-muted);
+  transition: all 0.2s ease;
+}
+.team-badge:hover .team-badge-placeholder {
+  border-color: var(--color-red);
+  color: var(--color-red);
+}
+
+/* ==================================================================
+   FILM SECTION
+=================================================================== */
+.film-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 96px 24px;
+}
+
+.film-wrap { max-width: 860px; margin: 0 auto; }
+
+.film-player {
+  width: 100%;
+  border-radius: var(--radius);
+  border: 1px solid var(--color-line);
+  background: #000;
+  display: block;
+}
+
+.film-fallback {
+  text-align: center;
+  color: var(--color-muted);
+  font-size: 0.88rem;
+  margin-top: 14px;
+}
+.film-fallback a { color: var(--color-blue); font-weight: 600; }
+.film-fallback a:hover { color: var(--color-chalk); }
+
+.film-timestamps {
+  margin-top: 32px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 14px;
+  border-top: 1px solid var(--color-line);
+  padding-top: 24px;
+}
+.timestamp {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  font-size: 0.88rem;
+  color: var(--color-muted);
+}
+.ts-time {
+  font-family: var(--font-mono);
+  color: var(--color-blue);
+  font-size: 0.8rem;
+}
+
+/* ==================================================================
+   CAREER SECTION
+=================================================================== */
+.career-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 24px 96px;
+}
+
+.career-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.career-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 30px 28px;
+}
+.career-card h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 10px 0 12px;
+}
+.career-card p { color: var(--color-muted); font-size: 0.92rem; }
+
+/* ==================================================================
+   AWARDS SECTION — description left / photo right, stacked rows
+=================================================================== */
+.awards-section {
+  background: var(--color-bg-alt-2);
+  padding: 96px 24px;
+  border-top: 1px solid var(--color-line);
+}
+
+.awards-list {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.award-card {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr;
+  gap: 0;
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  overflow: hidden;
+  background: var(--color-bg-alt);
+}
+
+.award-text {
+  padding: 32px 34px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.award-text h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.4rem;
+  margin: 10px 0 12px;
+}
+.award-text p { color: var(--color-muted); font-size: 0.92rem; }
+
+.award-media {
+  min-height: 220px;
+  background-size: cover;
+  background-position: center;
+  background-color: var(--color-bg-alt-2);
+}
+
+/* Shown until you swap in a real background-image on .award-media */
+.award-media-placeholder {
+  width: 100%;
+  height: 100%;
+  min-height: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  background: repeating-linear-gradient(
+    135deg,
+    var(--color-bg-alt-2),
+    var(--color-bg-alt-2) 10px,
+    #0c1830 10px,
+    #0c1830 20px
+  );
+  border-left: 1px solid var(--color-line);
+}
+.award-media-placeholder span {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  color: var(--color-chalk);
+  letter-spacing: 0.02em;
+}
+.award-media-placeholder small {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  color: var(--color-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+/* ==================================================================
+   RESPONSIVE ADDITIONS for the soccer page
+=================================================================== */
+@media (max-width: 900px) {
+  .career-grid { grid-template-columns: 1fr; }
+  .film-timestamps { grid-template-columns: 1fr; }
+  .award-card { grid-template-columns: 1fr; }
+  .award-media { min-height: 180px; order: -1; } /* photo on top on mobile, text below */
+}
+
+@media (max-width: 720px) {
+  .subnav-inner { flex-direction: column; align-items: flex-start; gap: 12px; }
+  .subnav-jumps { gap: 18px; }
+}

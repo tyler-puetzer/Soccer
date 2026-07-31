@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academics | Tyler Puetzer</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- Same shared stylesheet as the rest of the site -->
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       STICKY NAVIGATION BAR — same as every other page, "Academics" active
+  =============================================================== -->
+  <header class="navbar" id="navbar">
+    <nav class="nav-inner">
+      <a href="index.html" class="nav-logo">Tyler Puetzer</a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="soccer.html">Soccer</a></li>
+        <li><a href="academics.html" class="active">Academics</a></li>
+      </ul>
+
+      <div class="nav-recruiting">
+        <a href="#" target="_blank" rel="noopener" class="nav-pill">NCSA</a>
+        <a href="#" target="_blank" rel="noopener" class="nav-pill">FieldLevel</a>
+        <a href="#" target="_blank" rel="noopener" class="nav-pill">SportsRecruits</a>
+        <a href="#" target="_blank" rel="noopener" class="nav-pill">Play2Pitch</a>
+      </div>
+    </nav>
+
+    <!-- ============================================================
+         PAGE SUB-NAV
+         Left: jump links to each section below
+         Right: current institution badges linking to VGCC / Wake Tech.
+         EDIT ME: same as the soccer page — these are text placeholders,
+         swap for real institution logo images if/when you have them.
+    =============================================================== -->
+    <div class="subnav">
+      <div class="subnav-inner">
+        <div class="subnav-jumps">
+          <a href="#profile">Profile</a>
+          <a href="#education">Education</a>
+          <a href="#honors">Honors</a>
+          <a href="#research">Research</a>
+          <a href="#skills">Skills</a>
+        </div>
+        <div class="subnav-teams">
+          <a href="https://www.vgcc.edu/" target="_blank" rel="noopener" class="team-badge" aria-label="Vance-Granville Community College">
+            <span class="team-badge-placeholder">VGCC</span>
+          </a>
+          <a href="https://www.waketech.edu/" target="_blank" rel="noopener" class="team-badge" aria-label="Wake Technical Community College">
+            <span class="team-badge-placeholder">WTCC</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       PROFILE / SNAPSHOT SECTION
+       High-level pitch for admissions/transfer readers: who you are,
+       your GPA and academic standing at a glance.
+       EDIT ME: adjust the profile paragraph freely.
+  =============================================================== -->
+  <section class="film-section" id="profile">
+    <div class="section-heading">
+      <p class="section-eyebrow">Business Transfer Applicant</p>
+      <h2>Academic Profile</h2>
+      <p class="section-sub">Associate in Arts &middot; Wake Technical Community College &middot; Targeting Fall 2027 transfer</p>
+    </div>
+
+    <div class="film-wrap" style="max-width: 760px;">
+      <p style="color: var(--color-chalk); text-align:center; font-size:1.02rem; line-height:1.7; margin-bottom: 40px;">
+        I'm currently pursuing an Associate of Arts at Wake Technical Community College and plan to
+        transfer into a four-year business program to study marketing. Outside the classroom I stay
+        involved through athletics, employment, youth soccer coaching, and community service — I
+        believe balancing a demanding course load with real commitments is exactly what's prepared me
+        for a competitive business program.
+      </p>
+    </div>
+
+    <!-- Quick academic stats — reuses the same .stat-strip pattern as the homepage -->
+    <div class="stat-strip" style="border-top:none;">
+      <div class="stat"><span class="stat-num">3.842</span><span class="stat-label">GPA / 4.0</span></div>
+      <div class="stat"><span class="stat-num">66</span><span class="stat-label">Credits Earned/Planned</span></div>
+      <div class="stat"><span class="stat-num">2x</span><span class="stat-label">President's List</span></div>
+      <div class="stat"><span class="stat-num">3yr</span><span class="stat-label">Principal's List</span></div>
+      <div class="stat"><span class="stat-num">Fall '27</span><span class="stat-label">Transfer Target</span></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       EDUCATION SECTION
+       Reuses the same .career-grid / .career-card pattern from the
+       Soccer page for visual consistency across the site.
+  =============================================================== -->
+  <section class="career-section" id="education">
+    <div class="section-heading">
+      <p class="section-eyebrow">Education</p>
+      <h2>Coursework &amp; Institutions</h2>
+    </div>
+
+    <div class="career-grid">
+      <div class="career-card">
+        <span class="card-tag">2025 &ndash; 2026</span>
+        <h3>Vance-Granville Community College</h3>
+        <p>
+          Dual-enrolled high schooler. Completed 38 credits with a 3.842/4.000 GPA,
+          earning President's List honors twice.
+        </p>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">2026 &ndash; 2027 &middot; Current</span>
+        <h3>Wake Technical Community College</h3>
+        <p>
+          Current institution, pursuing an Associate of Arts with 28 additional credits
+          planned ahead of a Fall 2027 transfer.
+        </p>
+      </div>
+    </div>
+
+    <!-- Relevant coursework, styled as simple chips (reuses .pos-tag) -->
+    <div style="margin-top: 32px; text-align:center;">
+      <p class="section-eyebrow" style="margin-bottom:16px;">Relevant Coursework</p>
+      <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
+        <span class="pos-tag pos-outline">Brief Calculus</span>
+        <span class="pos-tag pos-outline">Principles of Macroeconomics</span>
+        <span class="pos-tag pos-outline">Principles of Microeconomics</span>
+        <span class="pos-tag pos-outline">Introduction to Business</span>
+        <span class="pos-tag pos-outline">Business Law I</span>
+        <span class="pos-tag pos-outline">Introduction to Statistics</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ACADEMIC HONORS SECTION
+  =============================================================== -->
+  <section class="awards-section" id="honors">
+    <div class="section-heading light">
+      <p class="section-eyebrow">Recognition</p>
+      <h2>Academic Honors</h2>
+    </div>
+
+    <div class="honors-grid">
+      <div class="career-card">
+        <span class="card-tag">VGCC</span>
+        <h3>President's List</h3>
+        <p>Earned President's List honors for two semesters at Vance-Granville Community College.</p>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">National Latin Exam</span>
+        <h3>Maxima Cum Laude</h3>
+        <p>National honors for excellence on the National Latin Exam (NLE).</p>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">Region 1 Math Competition</span>
+        <h3>Top 10 Finisher</h3>
+        <p>Placed in the top ten in a regional math competition, including a comprehensive exam round.</p>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">Youngsville Academy</span>
+        <h3>Principal's List (3 Years)</h3>
+        <p>Kept the Principal's List for three consecutive years throughout high school.</p>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">Youngsville Academy</span>
+        <h3>Academic Excellence &amp; History Awards</h3>
+        <p>Recognized with both an Academic Excellence Award and a History Award.</p>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">Academic &amp; Athletic</span>
+        <h3>Athletic Director's Class Award</h3>
+        <p>
+          Recognized for excellence in academics, athletics, and character &mdash;
+          see the full write-up on the <a href="soccer.html#awards" style="color: var(--color-blue);">Soccer page</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       MARKETING RESEARCH PROJECTS
+       Each project links out to a hosted file so recruiters can
+       read the full report.
+       EDIT ME: replace both href="#" links with the real path to
+       your hosted PDF/doc, e.g. media/marketing-career-research-report.pdf
+  =============================================================== -->
+  <section class="career-section" id="research">
+    <div class="section-heading">
+      <p class="section-eyebrow">Marketing Research Projects</p>
+      <h2>Read My Work</h2>
+    </div>
+
+    <div class="research-grid">
+      <div class="career-card">
+        <span class="card-tag">APA Format</span>
+        <h3>Marketing Career Research Report</h3>
+        <p>
+          Conducted primary and secondary research on marketing careers, industry
+          trends, and required skills. Interviewed the Chief Marketing Officer of an
+          AI startup and incorporated professional insights into a formal research report.
+        </p>
+        <a href="#" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:16px; display:inline-block;">Read Full Report &rarr;</a>
+      </div>
+
+      <div class="career-card">
+        <span class="card-tag">MLA Format</span>
+        <h3>Ethical Impacts of Aggressive Marketing</h3>
+        <p>
+          Researched the effects of aggressive marketing on consumer behavior using
+          peer-reviewed journals, and developed an evidence-based argument evaluating
+          the ethical responsibilities and integrity involved in modern marketing practices.
+        </p>
+        <a href="#" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:16px; display:inline-block;">Read Full Report &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SKILLS SECTION
+  =============================================================== -->
+  <section class="career-section" id="skills" style="padding-bottom: 96px;">
+    <div class="section-heading">
+      <p class="section-eyebrow">Skills</p>
+      <h2>Beyond the Classroom</h2>
+    </div>
+
+    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+      <span class="pos-tag pos-primary">Website Development (HTML/CSS/JS)</span>
+      <span class="pos-tag pos-outline">Microsoft Office Certified</span>
+      <span class="pos-tag pos-outline">Graphic Design Software</span>
+      <span class="pos-tag pos-outline">Photo &amp; Video Editing Software</span>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FOOTER — identical to every other page
+  =============================================================== -->
+  <footer class="footer">
+    <div class="footer-inner">
+
+      <div class="footer-brand">
+        <p class="footer-name">Tyler Puetzer</p>
+        <p class="footer-copy">&copy; <span id="year"></span> Built for college recruitment.</p>
+      </div>
+
+      <div class="footer-address">
+        <p class="footer-line">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+          Rolesville, NC
+        </p>
+        <p class="footer-line">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
+          <a href="mailto:tyler.puetzer@gmail.com">tyler.puetzer@gmail.com</a>
+        </p>
+      </div>
+
+      <div class="footer-social">
+        <a href="#" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+          </svg>
+        </a>
+        <a href="#" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube channel">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
+            <path d="M21.6 7.2s-.21-1.5-.86-2.16c-.82-.87-1.74-.87-2.16-.92C15.6 4 12 4 12 4h-.01s-3.6 0-6.58.12c-.42.05-1.34.05-2.16.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 8.96 2.18 10.72v1.55c0 1.76.22 3.52.22 3.52s.2 1.5.85 2.16c.82.87 1.9.84 2.38.93 1.73.17 7.37.22 7.37.22s3.6-.01 6.58-.13c.42-.05 1.34-.05 2.16-.92.65-.66.86-2.16.86-2.16s.22-1.76.22-3.52v-1.55c0-1.76-.22-3.52-.22-3.52zM9.98 14.6V8.9l5.4 2.86-5.4 2.85z"/>
+          </svg>
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

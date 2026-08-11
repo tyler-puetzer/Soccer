@@ -8,7 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
 
-  <!-- Same shared stylesheet as the rest of the site -->
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
@@ -40,19 +39,18 @@
     </nav>
 
     <!-- ============================================================
-         PAGE SUB-NAV
-         Left: jump links to each section below
-         Right: current institution badges linking to VGCC / Wake Tech.
-         EDIT ME: same as the soccer page — these are text placeholders,
-         swap for real institution logo images if/when you have them.
+         PAGE SUB-NAV — order now matches the new section order:
+         Profile / Education / Research / Honors / Skills
+         Right: institution badges. EDIT ME: swap the placeholder spans
+         for real logo <img> tags once you have them.
     =============================================================== -->
     <div class="subnav">
       <div class="subnav-inner">
         <div class="subnav-jumps">
           <a href="#profile">Profile</a>
           <a href="#education">Education</a>
-          <a href="#honors">Honors</a>
           <a href="#research">Research</a>
+          <a href="#honors">Honors</a>
           <a href="#skills">Skills</a>
         </div>
         <div class="subnav-teams">
@@ -68,51 +66,76 @@
   </header>
 
   <!-- ============================================================
-       PROFILE / SNAPSHOT SECTION
-       High-level pitch for admissions/transfer readers: who you are,
-       your GPA and academic standing at a glance.
-       EDIT ME: adjust the profile paragraph freely.
+       PROFILE / SNAPSHOT — redesigned as a proper two-column hero
+       instead of centered text: pitch/story on the left, a stylized
+       "transcript card" visual on the right, same layout pattern as
+       the homepage hero so the site still feels cohesive.
+       EDIT ME: adjust the profile paragraph and transcript numbers freely.
   =============================================================== -->
-  <section class="film-section" id="profile">
-    <div class="section-heading">
-      <p class="section-eyebrow">Business Transfer Applicant</p>
-      <h2>Academic Profile</h2>
-      <p class="section-sub">Associate in Arts &middot; Wake Technical Community College &middot; Targeting Fall 2027 transfer</p>
-    </div>
+  <section class="hero" id="profile">
+    <svg class="hero-pitch-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+      <rect x="20" y="20" width="1160" height="760" fill="none" stroke="currentColor" stroke-width="2"/>
+      <circle cx="600" cy="400" r="110" fill="none" stroke="currentColor" stroke-width="2"/>
+      <line x1="600" y1="20" x2="600" y2="780" stroke="currentColor" stroke-width="2"/>
+      <rect x="20" y="230" width="180" height="340" fill="none" stroke="currentColor" stroke-width="2"/>
+      <rect x="1000" y="230" width="180" height="340" fill="none" stroke="currentColor" stroke-width="2"/>
+    </svg>
 
-    <div class="film-wrap" style="max-width: 760px;">
-      <p style="color: var(--color-chalk); text-align:center; font-size:1.02rem; line-height:1.7; margin-bottom: 40px;">
-        I'm currently pursuing an Associate of Arts at Wake Technical Community College and plan to
-        transfer into a four-year business program to study marketing. Outside the classroom I stay
-        involved through athletics, employment, youth soccer coaching, and community service — I
-        believe balancing a demanding course load with real commitments is exactly what's prepared me
-        for a competitive business program.
-      </p>
-    </div>
+    <div class="hero-inner">
+      <div class="hero-text reveal-left">
+        <p class="hero-eyebrow">Business Transfer Applicant</p>
+        <h1 class="hero-name" style="font-size: clamp(2.4rem, 5vw, 3.8rem);">ACADEMIC<br>PROFILE</h1>
 
-    <!-- Quick academic stats — reuses the same .stat-strip pattern as the homepage -->
-    <div class="stat-strip" style="border-top:none;">
-      <div class="stat"><span class="stat-num">3.842</span><span class="stat-label">GPA / 4.0</span></div>
-      <div class="stat"><span class="stat-num">66</span><span class="stat-label">Credits Earned/Planned</span></div>
-      <div class="stat"><span class="stat-num">2x</span><span class="stat-label">President's List</span></div>
-      <div class="stat"><span class="stat-num">3yr</span><span class="stat-label">Principal's List</span></div>
-      <div class="stat"><span class="stat-num">Fall '27</span><span class="stat-label">Transfer Target</span></div>
+        <p class="hero-positions">
+          <span class="pos-tag pos-primary">Associate in Arts</span>
+          <span class="pos-tag pos-outline">Fall 2027 Transfer</span>
+        </p>
+
+        <p class="hero-welcome">
+          I'm currently pursuing an Associate of Arts at Wake Technical Community College
+          and plan to transfer into a four-year business program to study marketing.
+          Outside the classroom I stay involved through athletics, employment, youth
+          soccer coaching, and community service — balancing a demanding course load
+          with real commitments is exactly what's prepared me for a competitive
+          business program.
+        </p>
+
+        <div class="hero-ctas">
+          <a href="#research" class="btn-primary">See My Research &darr;</a>
+          <a href="mailto:tyler.puetzer@gmail.com" class="btn-secondary">Request Transcript</a>
+        </div>
+      </div>
+
+      <!-- Transcript-style stat card, replacing the plain centered stat strip -->
+      <div class="hero-media reveal-right">
+        <div class="transcript-card">
+          <p class="transcript-label">Unofficial Snapshot</p>
+          <div class="transcript-gpa">3.842<small> / 4.000 GPA</small></div>
+          <div class="gpa-bar"><div class="gpa-bar-fill"></div></div>
+
+          <div class="transcript-rows">
+            <div class="transcript-row"><span>Credits Earned / Planned</span><span>66</span></div>
+            <div class="transcript-row"><span>President's List</span><span>2 semesters</span></div>
+            <div class="transcript-row"><span>Principal's List</span><span>3 years</span></div>
+            <div class="transcript-row"><span>Transfer Target</span><span>Fall 2027</span></div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
   <!-- ============================================================
-       EDUCATION SECTION
-       Reuses the same .career-grid / .career-card pattern from the
-       Soccer page for visual consistency across the site.
+       EDUCATION SECTION — reuses .career-grid / .career-card,
+       cards alternate reveal directions as they scroll in.
   =============================================================== -->
   <section class="career-section" id="education">
-    <div class="section-heading">
+    <div class="section-heading reveal-up">
       <p class="section-eyebrow">Education</p>
       <h2>Coursework &amp; Institutions</h2>
     </div>
 
     <div class="career-grid">
-      <div class="career-card">
+      <div class="career-card reveal-left">
         <span class="card-tag">2025 &ndash; 2026</span>
         <h3>Vance-Granville Community College</h3>
         <p>
@@ -121,7 +144,7 @@
         </p>
       </div>
 
-      <div class="career-card">
+      <div class="career-card reveal-right">
         <span class="card-tag">2026 &ndash; 2027 &middot; Current</span>
         <h3>Wake Technical Community College</h3>
         <p>
@@ -132,7 +155,7 @@
     </div>
 
     <!-- Relevant coursework, styled as simple chips (reuses .pos-tag) -->
-    <div style="margin-top: 32px; text-align:center;">
+    <div class="reveal-up" style="margin-top: 32px; text-align:center;">
       <p class="section-eyebrow" style="margin-bottom:16px;">Relevant Coursework</p>
       <div style="display:flex; flex-wrap:wrap; gap:10px; justify-content:center;">
         <span class="pos-tag pos-outline">Brief Calculus</span>
@@ -146,46 +169,83 @@
   </section>
 
   <!-- ============================================================
-       ACADEMIC HONORS SECTION
+       MARKETING RESEARCH PROJECTS — now sits above Honors.
+       EDIT ME: replace both href="#" links with the real path to
+       your hosted PDF/doc, e.g. media/marketing-career-research-report.pdf
   =============================================================== -->
-  <section class="awards-section" id="honors">
-    <div class="section-heading light">
+  <section class="awards-section" id="research">
+    <div class="section-heading light reveal-up">
+      <p class="section-eyebrow">Marketing Research Projects</p>
+      <h2>Read My Work</h2>
+    </div>
+
+    <div class="research-grid">
+      <div class="career-card reveal-left">
+        <span class="card-tag">APA Format</span>
+        <h3>Marketing Career Research Report</h3>
+        <p>
+          Conducted primary and secondary research on marketing careers, industry
+          trends, and required skills. Interviewed the Chief Marketing Officer of an
+          AI startup and incorporated professional insights into a formal research report.
+        </p>
+        <a href="#" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:16px; display:inline-block;">Read Full Report &rarr;</a>
+      </div>
+
+      <div class="career-card reveal-right">
+        <span class="card-tag">MLA Format</span>
+        <h3>Ethical Impacts of Aggressive Marketing</h3>
+        <p>
+          Researched the effects of aggressive marketing on consumer behavior using
+          peer-reviewed journals, and developed an evidence-based argument evaluating
+          the ethical responsibilities and integrity involved in modern marketing practices.
+        </p>
+        <a href="#" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:16px; display:inline-block;">Read Full Report &rarr;</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       ACADEMIC HONORS SECTION — now below Research.
+       Grid items stagger in with a slight delay for a cascading feel.
+  =============================================================== -->
+  <section class="career-section" id="honors">
+    <div class="section-heading reveal-up">
       <p class="section-eyebrow">Recognition</p>
       <h2>Academic Honors</h2>
     </div>
 
     <div class="honors-grid">
-      <div class="career-card">
+      <div class="career-card reveal-up" style="transition-delay:0s;">
         <span class="card-tag">VGCC</span>
         <h3>President's List</h3>
         <p>Earned President's List honors for two semesters at Vance-Granville Community College.</p>
       </div>
 
-      <div class="career-card">
+      <div class="career-card reveal-up" style="transition-delay:0.08s;">
         <span class="card-tag">National Latin Exam</span>
         <h3>Maxima Cum Laude</h3>
         <p>National honors for excellence on the National Latin Exam (NLE).</p>
       </div>
 
-      <div class="career-card">
+      <div class="career-card reveal-up" style="transition-delay:0.16s;">
         <span class="card-tag">Region 1 Math Competition</span>
         <h3>Top 10 Finisher</h3>
         <p>Placed in the top ten in a regional math competition, including a comprehensive exam round.</p>
       </div>
 
-      <div class="career-card">
+      <div class="career-card reveal-up" style="transition-delay:0.24s;">
         <span class="card-tag">Youngsville Academy</span>
         <h3>Principal's List (3 Years)</h3>
         <p>Kept the Principal's List for three consecutive years throughout high school.</p>
       </div>
 
-      <div class="career-card">
+      <div class="career-card reveal-up" style="transition-delay:0.32s;">
         <span class="card-tag">Youngsville Academy</span>
         <h3>Academic Excellence &amp; History Awards</h3>
         <p>Recognized with both an Academic Excellence Award and a History Award.</p>
       </div>
 
-      <div class="career-card">
+      <div class="career-card reveal-up" style="transition-delay:0.4s;">
         <span class="card-tag">Academic &amp; Athletic</span>
         <h3>Athletic Director's Class Award</h3>
         <p>
@@ -197,53 +257,15 @@
   </section>
 
   <!-- ============================================================
-       MARKETING RESEARCH PROJECTS
-       Each project links out to a hosted file so recruiters can
-       read the full report.
-       EDIT ME: replace both href="#" links with the real path to
-       your hosted PDF/doc, e.g. media/marketing-career-research-report.pdf
-  =============================================================== -->
-  <section class="career-section" id="research">
-    <div class="section-heading">
-      <p class="section-eyebrow">Marketing Research Projects</p>
-      <h2>Read My Work</h2>
-    </div>
-
-    <div class="research-grid">
-      <div class="career-card">
-        <span class="card-tag">APA Format</span>
-        <h3>Marketing Career Research Report</h3>
-        <p>
-          Conducted primary and secondary research on marketing careers, industry
-          trends, and required skills. Interviewed the Chief Marketing Officer of an
-          AI startup and incorporated professional insights into a formal research report.
-        </p>
-        <a href="media/ENG 112 X370 - APA Journal - Puetzer.pdf" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:16px; display:inline-block;">Read Full Report &rarr;</a>
-      </div>
-
-      <div class="career-card">
-        <span class="card-tag">MLA Format</span>
-        <h3>Ethical Impacts of Aggressive Marketing</h3>
-        <p>
-          Researched the effects of aggressive marketing on consumer behavior using
-          peer-reviewed journals, and developed an evidence-based argument evaluating
-          the ethical responsibilities and integrity involved in modern marketing practices.
-        </p>
-        <a href="media/ENG-112-X370 - Ethical Impacts of Aggressive Marketing _ MLA - Puetzer.pdf" target="_blank" rel="noopener" class="btn-secondary" style="margin-top:16px; display:inline-block;">Read Full Report &rarr;</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ============================================================
        SKILLS SECTION
   =============================================================== -->
   <section class="career-section" id="skills" style="padding-bottom: 96px;">
-    <div class="section-heading">
+    <div class="section-heading reveal-up">
       <p class="section-eyebrow">Skills</p>
       <h2>Beyond the Classroom</h2>
     </div>
 
-    <div style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
+    <div class="reveal-up" style="display:flex; flex-wrap:wrap; gap:12px; justify-content:center;">
       <span class="pos-tag pos-primary">Website Development (HTML/CSS/JS)</span>
       <span class="pos-tag pos-outline">Microsoft Office Certified</span>
       <span class="pos-tag pos-outline">Graphic Design Software</span>

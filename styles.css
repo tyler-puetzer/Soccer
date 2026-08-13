@@ -1625,3 +1625,20 @@ img {
   }
 
 }
+
+.honors-link {
+  text-align: center;
+  margin-top: 36px;
+  color: var(--color-muted);
+  font-size: 0.92rem;
+}
+
+.honors-link a {
+  color: var(--color-blue);
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.honors-link a:hover {
+  color: var(--color-chalk);
+}

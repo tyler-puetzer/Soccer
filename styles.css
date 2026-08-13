@@ -1642,3 +1642,246 @@ img {
 .honors-link a:hover {
   color: var(--color-chalk);
 }
+
+
+/* ================================================================
+   ABOUT ME PAGE
+================================================================ */
+
+.about-page {
+  background:
+    radial-gradient(
+      circle at 15% 10%,
+      rgba(62,123,250,0.08),
+      transparent 28rem
+    ),
+    var(--color-bg);
+}
+
+.about-hero {
+  max-width: var(--max-width);
+  min-height: calc(100vh - 94px);
+  margin: 0 auto;
+  padding: 90px 24px 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-hero-inner {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-hero-copy {
+  max-width: 700px;
+}
+
+.about-title {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(4rem, 8vw, 6.5rem);
+  line-height: 0.86;
+  margin-bottom: 28px;
+}
+
+.about-title span {
+  color: var(--color-blue);
+}
+
+.about-intro {
+  color: rgba(245,247,250,0.82);
+  max-width: 60ch;
+  margin-bottom: 28px;
+}
+
+.about-intro-card {
+  background: rgba(18,42,79,0.62);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 30px;
+}
+
+.about-card-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 18px 0;
+  border-bottom: 1px solid var(--color-line);
+  font-size: 0.88rem;
+}
+
+.about-card-line:first-of-type {
+  margin-top: 14px;
+}
+
+.about-card-line:last-child {
+  border-bottom: none;
+}
+
+.about-card-line span {
+  color: var(--color-muted);
+}
+
+.about-card-line strong {
+  text-align: right;
+  font-weight: 600;
+}
+
+.about-section {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 100px 24px;
+}
+
+.about-story-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.about-story-main {
+  font-size: 1rem;
+  color: rgba(245,247,250,0.82);
+}
+
+.about-story-main p {
+  margin-bottom: 22px;
+}
+
+.about-side-card {
+  background: var(--color-bg-alt);
+  border: 1px solid var(--color-line);
+  border-radius: var(--radius);
+  padding: 28px;
+}
+
+.value-item {
+  padding: 20px 0;
+  border-bottom: 1px solid var(--color-line);
+}
+
+.value-item:last-child {
+  border-bottom: none;
+}
+
+.value-item strong {
+  display: block;
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 4px;
+}
+
+.value-item span {
+  color: var(--color-muted);
+  font-size: 0.86rem;
+}
+
+.about-values-section {
+  background: var(--color-bg-alt-2);
+  border-top: 1px solid var(--color-line);
+  border-bottom: 1px solid var(--color-line);
+  padding: 100px 24px;
+}
+
+.about-values-grid {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.about-value-card {
+  border: 1px solid var(--color-line);
+  background: rgba(18,42,79,0.38);
+  border-radius: var(--radius);
+  padding: 32px;
+}
+
+.about-number {
+  font-family: var(--font-mono);
+  color: var(--color-blue);
+  font-size: 0.75rem;
+}
+
+.about-value-card h3 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: 1.5rem;
+  margin: 14px 0 10px;
+}
+
+.about-value-card p {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+}
+
+.about-activity-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.about-closing {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 90px 24px 110px;
+  text-align: center;
+}
+
+.about-closing h2 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  font-size: clamp(2rem, 5vw, 3.4rem);
+  line-height: 1;
+  margin: 12px 0 28px;
+}
+
+
+/* ================================================================
+   ABOUT RESPONSIVE
+================================================================ */
+
+@media (max-width: 900px) {
+
+  .about-hero-inner {
+    grid-template-columns: 1fr;
+    gap: 45px;
+  }
+
+  .about-story-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .about-values-grid,
+  .about-activity-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media (max-width: 720px) {
+
+  .about-hero {
+    padding-top: 65px;
+  }
+
+  .about-title {
+    font-size: clamp(3.5rem, 17vw, 5rem);
+  }
+
+  .about-card-line {
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .about-card-line strong {
+    text-align: left;
+  }
+
+}

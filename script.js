@@ -1,7 +1,6 @@
-// ======================================================================
+// 
 // MOBILE NAV TOGGLE
-// Opens/closes the nav-links list when the hamburger icon is tapped.
-// ======================================================================
+//
 
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
@@ -22,10 +21,9 @@ if (navToggle && navLinks) {
 }
 
 
-// ======================================================================
+// 
 // HERO MEDIA CAROUSEL
-// Keeps the existing carousel behavior unchanged.
-// ======================================================================
+//
 
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
@@ -108,9 +106,6 @@ if (slides.length) {
 
 // ======================================================================
 // SCROLL REVEALS
-// Every .reveal-* element animates once when it enters the viewport.
-// The fallback makes everything visible if IntersectionObserver is not
-// supported or motion is reduced.
 // ======================================================================
 
 const revealItems = document.querySelectorAll(
@@ -182,10 +177,9 @@ if ('IntersectionObserver' in window) {
 }
 
 
-// ======================================================================
+// 
 // FOOTER YEAR
-// Keeps the copyright year current without hardcoding it.
-// ======================================================================
+// 
 
 const yearEl =
   document.getElementById('year');

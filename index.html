@@ -7,9 +7,9 @@
 
   <!-- ============================================================
        FONTS
-       "Anton" = big condensed headline font (jersey-number energy)
-       "Inter" = clean body text font
-       "JetBrains Mono" = used for stats/numbers (scoreboard feel)
+       Anton headlines
+       Inter = body text 
+       JetBrains Mono = stats/numbers
   =============================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
@@ -19,13 +19,7 @@
 </head>
 <body>
 
-  <!-- ============================================================
-       STICKY NAVIGATION BAR
-       - "TYLER PUETZER" text on the left always links back home (index.html)
-       - Center/right links point to the other pages you'll build next:
-         about.html, soccer.html, academics.html
-       - Recruiting profile icons sit on the far right
-  =============================================================== -->
+  <!--STICKY NAVIGATION BAR-->
   <header class="navbar" id="navbar">
     <nav class="nav-inner">
       <a href="index.html" class="nav-logo">Tyler Puetzer</a>
@@ -42,7 +36,7 @@
         <li><a href="academics.html">Academics</a></li>
       </ul>
 
-      <!-- Recruiting profile quick-links (replace # with your real profile URLs) -->
+      <!-- Recruiting profile quick-links-->
       <div class="nav-recruiting">
         <a href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910" target="_blank" rel="noopener" class="nav-pill">NCSA</a>
         <a href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3" target="_blank" rel="noopener" class="nav-pill">FieldLevel</a>
@@ -51,12 +45,9 @@
     </nav>
   </header>
 
-  <!-- ============================================================
+  <!--
        HERO SECTION
-       Left: name, position, tagline, intro text, CTA button
-       Right: media carousel placeholder (swap the slides for your
-       own photos/highlight video thumbnails in script.js -> "slides" array)
-  =============================================================== -->
+      -->
   <section class="hero">
     <!-- decorative pitch-line SVG sits behind the hero content -->
     <svg class="hero-pitch-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
@@ -68,7 +59,8 @@
     </svg>
 
     <div class="hero-inner">
-      <div class="hero-text">
+
+      <div class="hero-text reveal-left">
         <p class="hero-eyebrow">Junior Transfer &middot; Fall 2027</p>
         <h1 class="hero-name">TYLER<br>PUETZER</h1>
 
@@ -80,7 +72,6 @@
 
         <p class="hero-meta">5'9&quot; &nbsp;|&nbsp; 140 lbs &nbsp;|&nbsp; Age 17</p>
 
-        <!-- EDIT ME: swap this welcome message for your own words -->
         <p class="hero-welcome">
           Welcome — this is my self-made recruiting site. I'm a full-time college
           student-athlete at 17; targeting a
@@ -89,27 +80,24 @@
         </p>
 
         <div class="hero-ctas">
-          <!-- EDIT ME: point this at your email, contact form, or Hudl/NCSA message link -->
+
           <a href="contact.html" class="btn-primary">Connect With Me!</a>
           <a href="soccer.html" class="btn-secondary">Watch Film</a>
         </div>
       </div>
 
-      <!-- MEDIA CAROUSEL PLACEHOLDER ============================
-           Replace each .slide background image with your own photo,
-           e.g. style="background-image:url('your-photo.jpg')"
-           Add/remove .slide divs and matching .dot buttons together.
-      ============================================================ -->
-      <div class="hero-media">
+     
+      <div class="hero-media reveal-right">
         <div class="carousel" id="carousel">
-          <!-- Order: highcontranst, 6804, 9436, 1404, 2260, purple, 7504 -->
+  
           <div class="slide active" style="background-image:url('media/highcontranst.png'); background-position:center 60%;"></div>
           <div class="slide" style="background-image:url('media/G85_6804.jpg'); background-position:center 20%;"></div>
           <div class="slide" style="background-image:url('media/F85_9436.jpg')"></div>
           <div class="slide" style="background-image:url('media/H85_1404.jpg')"></div>
-          <!-- EDIT ME: this one is more landscape/group-shot than the others, so cover crops
-               a lot off the left/right sides — swap in a taller crop of this photo if you have one -->
+
+        
           <div class="slide" style="background-image:url('media/H85_2260.jpg'); background-position:40% center;"></div>
+
           <div class="slide" style="background-image:url('media/purple.png')"></div>
           <div class="slide" style="background-image:url('media/F85_7504.jpg')"></div>
 
@@ -127,33 +115,57 @@
           </div>
         </div>
       </div>
+
     </div>
   </section>
 
-  <!-- ============================================================
-       QUICK STAT STRIP — scoreboard-style key numbers
-  =============================================================== -->
+  <!-- 
+       QUICK STAT STRIP 
+ -->
   <section class="stat-strip">
-    <div class="stat"><span class="stat-num">3.9</span><span class="stat-label">GPA / 4.0</span></div>
-    <div class="stat"><span class="stat-num">Wake Tech</span><span class="stat-label">Community College</span></div>
-    <div class="stat"><span class="stat-num">Marketing</span><span class="stat-label">Major</span></div>
-    <div class="stat"><span class="stat-num">NCFC</span><span class="stat-label">Club</span></div>
-    <div class="stat"><span class="stat-num">67</span><span class="stat-label">Credits Planned</span></div>
+
+
+    <div class="stat reveal-up" style="transition-delay:0s;">
+      <span class="stat-num">3.9</span>
+      <span class="stat-label">GPA / 4.0</span>
+    </div>
+
+    <div class="stat reveal-up" style="transition-delay:0.08s;">
+      <span class="stat-num">Wake Tech</span>
+      <span class="stat-label">Community College</span>
+    </div>
+
+    <div class="stat reveal-up" style="transition-delay:0.16s;">
+      <span class="stat-num">Marketing</span>
+      <span class="stat-label">Major</span>
+    </div>
+
+    <div class="stat reveal-up" style="transition-delay:0.24s;">
+      <span class="stat-num">NCFC</span>
+      <span class="stat-label">Club</span>
+    </div>
+
+    <div class="stat reveal-up" style="transition-delay:0.32s;">
+      <span class="stat-num">67</span>
+      <span class="stat-label">Credits Planned</span>
+    </div>
+
   </section>
 
-  <!-- ============================================================
-       POSITIONAL IDENTITY — signature graphic
-       A simple tactical pitch map showing primary / secondary /
-       third position, since Tyler plays multiple roles.
-  =============================================================== -->
+  <!-- 
+       POSITIONAL GRAPHIC -->
   <section class="position-section">
-    <div class="section-heading">
+
+
+    <div class="section-heading reveal-up">
       <p class="section-eyebrow">Where I Play</p>
       <h2>Built for the final third</h2>
       <p class="section-sub">Most comfortable as an attacking midfielder, or in the front line, but can play every position on the field.</p>
     </div>
 
-    <div class="tactics-board">
+    
+    <div class="tactics-board reveal-up">
+
       <svg viewBox="0 0 400 600" class="pitch-svg" aria-hidden="true">
         <rect x="10" y="10" width="380" height="580" fill="none" stroke="#2c4a78" stroke-width="2"/>
         <line x1="10" y1="300" x2="390" y2="300" stroke="#2c4a78" stroke-width="2"/>
@@ -162,126 +174,230 @@
         <rect x="90" y="500" width="220" height="90" fill="none" stroke="#2c4a78" stroke-width="2"/>
       </svg>
 
-      <!-- position markers are positioned with CSS (see .marker classes) -->
+     
+
       <div class="marker marker-am">
         <span class="marker-dot"></span>
         <span class="marker-label">CAM <em>Primary</em></span>
       </div>
+
       <div class="marker marker-fw">
         <span class="marker-dot"></span>
         <span class="marker-label">FW <em>Secondary</em></span>
       </div>
+
       <div class="marker marker-dm">
         <span class="marker-dot"></span>
         <span class="marker-label">CDM <em>Third</em></span>
       </div>
+
     </div>
+
   </section>
 
-  <!-- ============================================================
-       EXPLORE SECTION — cards linking to the three sub-pages
-  =============================================================== -->
+  <!-- 
+       EXPLORE SECTION-->
   <section class="explore">
-    <div class="section-heading">
+
+    <!-- ONLY CHANGE: reveal-up -->
+    <div class="section-heading reveal-up">
       <p class="section-eyebrow">Explore</p>
       <h2>Get the full picture</h2>
     </div>
 
     <div class="card-grid">
-      <a href="about.html" class="explore-card">
+
+   
+      <a href="about.html" class="explore-card reveal-left">
         <span class="card-tag">01</span>
         <h3>About Me</h3>
         <p>My story on and off the pitch — who I am beyond the stats.</p>
         <span class="card-arrow">&rarr;</span>
       </a>
 
-      <a href="soccer.html" class="explore-card">
+
+      <a href="soccer.html" class="explore-card reveal-up">
         <span class="card-tag">02</span>
         <h3>Soccer</h3>
         <p>Film, positions, club &amp; school teams, career history, and athletic honors.</p>
         <span class="card-arrow">&rarr;</span>
       </a>
 
-      <a href="academics.html" class="explore-card">
+   
+      <a href="academics.html" class="explore-card reveal-right">
         <span class="card-tag">03</span>
         <h3>Academics</h3>
         <p>Plans, coursework, research projects, and academic honors.</p>
         <span class="card-arrow">&rarr;</span>
       </a>
+
     </div>
   </section>
 
-  <!-- ============================================================
-       RECRUITING PROFILES — big clear links to external platforms
-       EDIT ME: replace href="#" with your real profile URLs
-  =============================================================== -->
+  <!-- 
+       RECRUITING PROFILES 
+       -->
   <section class="recruiting">
-    <div class="section-heading light">
+
+    <!-- ONLY CHANGE: reveal-up -->
+    <div class="section-heading light reveal-up">
       <p class="section-eyebrow">Follow My Recruitment</p>
       <h2>Find me on the platforms coaches use</h2>
     </div>
 
     <div class="recruiting-grid">
-      <a href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910" target="_blank" rel="noopener" class="recruit-card">
+
+
+      <a
+        href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910"
+        target="_blank"
+        rel="noopener"
+        class="recruit-card reveal-left"
+      >
         <span>NCSA</span>
         <small>Recruiting Profile</small>
       </a>
-      <a href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3" target="_blank" rel="noopener" class="recruit-card">
+
+    
+      <a
+        href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3"
+        target="_blank"
+        rel="noopener"
+        class="recruit-card reveal-up"
+      >
         <span>FieldLevel</span>
         <small>Recruiting Profile</small>
       </a>
-      <a href="https://my.sportsrecruits.com/athlete/tyler_puetzer" target="_blank" rel="noopener" class="recruit-card">
+
+  
+      <a
+        href="https://my.sportsrecruits.com/athlete/tyler_puetzer"
+        target="_blank"
+        rel="noopener"
+        class="recruit-card reveal-up"
+      >
         <span>SportsRecruits</span>
         <small>Recruiting Profile</small>
       </a>
-      <a href="#" target="_blank" rel="noopener" class="recruit-card">
+
+      <a
+        href="#"
+        target="_blank"
+        rel="noopener"
+        class="recruit-card reveal-right"
+      >
         <span>Play2Pitch</span>
         <small>Recruiting Profile</small>
       </a>
+
     </div>
   </section>
 
-  <!-- ============================================================
+  <!-- 
        FOOTER
-  =============================================================== -->
+  -->
   <footer class="footer">
+
     <div class="footer-inner">
 
       <!-- Left: brand + copyright -->
       <div class="footer-brand">
         <p class="footer-name">Tyler Puetzer</p>
-        <p class="footer-copy">&copy; <span id="year"></span> Built for college recruitment.</p>
+        <p class="footer-copy">
+          &copy; <span id="year"></span> Built for college recruitment.
+        </p>
       </div>
 
-      <!-- Center: address / contact -->
+ 
       <div class="footer-address">
+
         <p class="footer-line">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 0 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/>
+            <circle cx="12" cy="10" r="2.5"/>
+          </svg>
+
           Rolesville, NC
+
         </p>
+
         <p class="footer-line">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>
-          <a href="contact.html">tyler.puetzer@gmail.com</a>
+
+          <svg
+            width="16"
+            height="16"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            aria-hidden="true"
+          >
+            <rect x="3" y="5" width="18" height="14" rx="2"/>
+            <path d="M3 7l9 6 9-6"/>
+          </svg>
+
+          <a href="contact.html">
+            tyler.puetzer@gmail.com
+          </a>
+
         </p>
+
       </div>
 
-      <!-- Right: social icon buttons -->
-      <!-- EDIT ME: replace both # with your real LinkedIn / YouTube URLs -->
+    
+
       <div class="footer-social">
-        <a href="https://www.linkedin.com/in/tyler-puetzer" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
+
+        <a
+          href="https://www.linkedin.com/in/tyler-puetzer"
+          target="_blank"
+          rel="noopener"
+          class="social-icon"
+          aria-label="LinkedIn profile"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0-4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
           </svg>
         </a>
-        <a href="https://www.youtube.com/@TylerPuetzer" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube channel">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true">
-            <path d="M21.6 7.2s-.21-1.5-.86-2.16c-.82-.87-1.74-.87-2.16-.92C15.6 4 12 4 12 4h-.01s-3.6 0-6.58.12c-.42.05-1.34.05-2.16.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 8.96 2.18 10.72v1.55c0 1.76.22 3.52.22 3.52s.2 1.5.85 2.16c.82.87 1.9.84 2.38.93 1.73.17 7.37.22 7.37.22s3.6-.01 6.58-.13c.42-.05 1.34-.05 2.16-.92.65-.66.86-2.16.86-2.16s.22-1.76.22-3.52v-1.55c0-1.76-.22-3.52-.22-3.52zM9.98 14.6V8.9l5.4 2.86-5.4 2.85z"/>
+
+        <a
+          href="https://www.youtube.com/@TylerPuetzer"
+          target="_blank"
+          rel="noopener"
+          class="social-icon"
+          aria-label="YouTube channel"
+        >
+          <svg
+            viewBox="0 0 24 24"
+            width="20"
+            height="20"
+            fill="currentColor"
+            aria-hidden="true"
+          >
+            <path d="M21.6 7.2s-.21-1.5-.86-2.16c-.82-.87-1.74-.87-2.16-.92C15.6 4 12 4 12 4h-.01s-3.6 0-6.58.12c-.42.05-1.34.05-2.16.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 8.96 2.18 10.72v1.55c0 1.76.22 3.52.22 3.52s.2 1.5.85 2.16c.82.87 1.9.84 2.38.93 1.73.17 7.37.22 7.37.22s3.6-.01 6.58-.13c.42-.05 1.34-.05 2.16-.92.65-.66.86-2.16.86-2.16s.22-1.76.22-3.52v-1.55c0-1.76-.22-3.52-.22-3.52zM9.98 14.6V8.9l5.4 2.86-5.4-2.85z"/>
           </svg>
         </a>
+
       </div>
 
     </div>
   </footer>
+
   <script src="script.js"></script>
 </body>
 </html>

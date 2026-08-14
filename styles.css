@@ -16,8 +16,8 @@
   --color-chalk: #F5F7FA;
   --color-muted: #93A6C2;
   --color-blue: #3E7BFA;
-  --color-red: #FF4B3E;
-  --color-red-hover: #E23B2F;
+  --color-red: #E63950;
+  --color-red-hover: #C92C42;
 
   --font-display: 'Anton', sans-serif;
   --font-body: 'Inter', sans-serif;
@@ -628,7 +628,7 @@ img {
 .recruit-card:hover {
   transform: translateY(-4px);
   border-color: var(--color-red);
-  background: rgba(255,75,62,0.08);
+  background: rgba(230,57,80,0.08);
 }
 
 
@@ -1203,7 +1203,7 @@ img {
     140deg,
     rgba(62,123,250,0.45),
     transparent 45%,
-    rgba(255,75,62,0.24)
+    rgba(230,57,80,0.24)
   );
   -webkit-mask:
     linear-gradient(#fff 0 0) content-box,
@@ -1519,7 +1519,7 @@ img {
 
 .skill-primary {
   border-color: var(--color-red);
-  background: rgba(255,75,62,0.12);
+  background: rgba(230,57,80,0.12);
 }
 
 

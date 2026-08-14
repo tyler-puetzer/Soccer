@@ -1,13 +1,3 @@
-/* ==================================================================
-   DESIGN TOKENS
-   Change colors/fonts here and they update everywhere on the site.
-   Palette idea: a night match under stadium lights — deep navy blue
-   background with a bright red + bright blue kit-color accent duo.
-   (Red/blue read as classic soccer kit colors and give more energy
-   than a soft pastel pairing — swap the hex values below if you'd
-   rather try light coral + light blue instead.)
-=================================================================== */
-
 :root {
   --color-bg: #0B1A33;
   --color-bg-alt: #122A4F;

@@ -1,70 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- ============================================================
-       BASIC SEO
-   =============================================================== -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <title>Tyler Puetzer | Student, Soccer Player &amp; Marketing Major</title>
-
-  <meta
-    name="description"
-    content="Official website of Tyler Puetzer, a Wake Tech student, soccer player, and marketing major. Explore his academics, soccer experience, achievements, projects, and recruiting profile."
-  />
-
+  <meta name="description" content="Official website of Tyler Puetzer, a Wake Tech student, soccer player, and marketing major. Explore his academics, soccer experience, achievements, projects, and recruiting profile." />
   <meta name="author" content="Tyler Puetzer" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
-
-  <!-- ============================================================
-       FAVICON
-   =============================================================== -->
-  <link
-    rel="icon"
-    type="image/png"
-    href="https://images.vexels.com/media/users/3/143402/isolated/preview/afbbf15d5e82a1c4fb5a55c4eacf3003-graduation-cap-icon.png"
-  />
-  <link
-    rel="shortcut icon"
-    type="image/png"
-    href="https://images.vexels.com/media/users/3/143402/isolated/preview/afbbf15d5e82a1c4fb5a55c4eacf3003-graduation-cap-icon.png"
-  />
-
-  <!-- ============================================================
-       OPEN GRAPH
-       Helps Google, LinkedIn, Facebook, etc. understand the site.
-   =============================================================== -->
+  <link rel="icon" type="image/png" href="https://images.vexels.com/media/users/3/143402/isolated/preview/afbbf15d5e82a1c4fb5a55c4eacf3003-graduation-cap-icon.png" />
+  <link rel="shortcut icon" type="image/png" href="https://images.vexels.com/media/users/3/143402/isolated/preview/afbbf15d5e82a1c4fb5a55c4eacf3003-graduation-cap-icon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Tyler Puetzer | Student, Soccer Player &amp; Marketing Major" />
-  <meta
-    property="og:description"
-    content="Official website of Tyler Puetzer featuring his soccer career, academics, achievements, projects, and recruiting information."
-  />
+  <meta property="og:description" content="Official website of Tyler Puetzer featuring his soccer career, academics, achievements, projects, and recruiting information." />
   <meta property="og:site_name" content="Tyler Puetzer" />
-
-  <!-- ============================================================
-       TWITTER / SOCIAL PREVIEW
-   =============================================================== -->
+  <meta property="og:url" content="https://tyler-puetzer.github.io/Soccer/" />
+  <meta property="og:image" content="https://tyler-puetzer.github.io/Soccer/media/tyler-puetzer-soccer.png" />
+  <meta property="og:image:alt" content="Tyler Puetzer soccer player" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Tyler Puetzer | Student, Soccer Player &amp; Marketing Major" />
-  <meta
-    name="twitter:description"
-    content="Official website of Tyler Puetzer featuring his soccer career, academics, achievements, projects, and recruiting information."
-  />
-
-  <!-- ============================================================
-       STRUCTURED DATA
-       Helps search engines and AI systems understand that this
-       website represents Tyler Puetzer.
-   =============================================================== -->
+  <meta name="twitter:description" content="Official website of Tyler Puetzer featuring his soccer career, academics, achievements, projects, and recruiting information." />
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Tyler Puetzer",
     "url": "https://tyler-puetzer.github.io/Soccer/",
-    "image": "https://tyler-puetzer.github.io/Soccer/media/tyler-puetzer-soccer-night.jpg",
+    "image": "https://tyler-puetzer.github.io/Soccer/media/tyler-puetzer-soccer.png",
     "jobTitle": "Student-Athlete",
     "description": "College student-athlete at Wake Technical Community College studying marketing and pursuing a junior-year transfer to a four-year university.",
     "alumniOf": {
@@ -80,588 +41,109 @@
     ]
   }
   </script>
-
-  <!-- ============================================================
-       FONTS
-       Anton headlines
-       Inter = body text
-       JetBrains Mono = stats/numbers
-   =============================================================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap"
-    rel="stylesheet"
-  />
-
-  <!-- Link to the separate CSS file. In CodePen, paste style.css into the CSS panel instead. -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
-
 <body>
-
-  <!-- ============================================================
-       STICKY NAVIGATION BAR
-   =============================================================== -->
   <header class="navbar" id="navbar">
     <nav class="nav-inner">
       <a href="index.html" class="nav-logo">Tyler Puetzer</a>
-
-      <!-- Hamburger button, only visible on mobile. Toggled by script.js -->
-      <button
-        class="nav-toggle"
-        id="navToggle"
-        aria-label="Toggle navigation menu"
-      >
-        <span></span><span></span><span></span>
-      </button>
-
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu"><span></span><span></span><span></span></button>
       <ul class="nav-links" id="navLinks">
         <li><a href="index.html" class="active">Home</a></li>
         <li><a href="about.html">About Me</a></li>
         <li><a href="soccer.html">Soccer</a></li>
         <li><a href="academics.html">Academics</a></li>
       </ul>
-
-      <!-- Recruiting profile quick-links -->
       <div class="nav-recruiting">
-        <a
-          href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910"
-          target="_blank"
-          rel="noopener"
-          class="nav-pill"
-        >NCSA</a>
-
-        <a
-          href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3"
-          target="_blank"
-          rel="noopener"
-          class="nav-pill"
-        >FieldLevel</a>
-
-        <a
-          href="https://my.sportsrecruits.com/athlete/tyler_puetzer"
-          target="_blank"
-          rel="noopener"
-          class="nav-pill"
-        >SportsRecruits</a>
+        <a href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910" target="_blank" rel="noopener" class="nav-pill">NCSA</a>
+        <a href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3" target="_blank" rel="noopener" class="nav-pill">FieldLevel</a>
+        <a href="https://my.sportsrecruits.com/athlete/tyler_puetzer" target="_blank" rel="noopener" class="nav-pill">SportsRecruits</a>
       </div>
     </nav>
   </header>
-
-  <!-- ============================================================
-       HERO SECTION
-   =============================================================== -->
   <section class="hero">
-    <!-- decorative pitch-line SVG sits behind the hero content -->
-    <svg
-      class="hero-pitch-lines"
-      viewBox="0 0 1200 800"
-      preserveAspectRatio="none"
-      aria-hidden="true"
-    >
-      <rect
-        x="20"
-        y="20"
-        width="1160"
-        height="760"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      />
-      <circle
-        cx="600"
-        cy="400"
-        r="110"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      />
-      <line
-        x1="600"
-        y1="20"
-        x2="600"
-        y2="780"
-        stroke="currentColor"
-        stroke-width="2"
-      />
-      <rect
-        x="20"
-        y="230"
-        width="180"
-        height="340"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      />
-      <rect
-        x="1000"
-        y="230"
-        width="180"
-        height="340"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="2"
-      />
+    <svg class="hero-pitch-lines" viewBox="0 0 1200 800" preserveAspectRatio="none" aria-hidden="true">
+      <rect x="20" y="20" width="1160" height="760" fill="none" stroke="currentColor" stroke-width="2" />
+      <circle cx="600" cy="400" r="110" fill="none" stroke="currentColor" stroke-width="2" />
+      <line x1="600" y1="20" x2="600" y2="780" stroke="currentColor" stroke-width="2" />
+      <rect x="20" y="230" width="180" height="340" fill="none" stroke="currentColor" stroke-width="2" />
+      <rect x="1000" y="230" width="180" height="340" fill="none" stroke="currentColor" stroke-width="2" />
     </svg>
-
     <div class="hero-inner">
-
       <div class="hero-text reveal-left">
         <p class="hero-eyebrow">Junior Transfer &middot; Fall 2027</p>
-
         <h1 class="hero-name">TYLER<br>PUETZER</h1>
-
-        <p class="hero-positions">
-          <span class="pos-tag pos-primary">CAM</span>
-          <span class="pos-tag">FW</span>
-          <span class="pos-tag pos-outline">CDM</span>
-        </p>
-
+        <p class="hero-positions"><span class="pos-tag pos-primary">CAM</span><span class="pos-tag">FW</span><span class="pos-tag pos-outline">CDM</span></p>
         <p class="hero-meta">5'9&quot; &nbsp;|&nbsp; 140 lbs &nbsp;|&nbsp; Age 17</p>
-
-        <p class="hero-welcome">
-          Welcome — this is my self-made recruiting site. I'm a full-time college
-          student-athlete at 17; targeting a Junior-year transfer to a
-          DI/DII program in Fall 2027. Take a look at my film, academics, and
-          story below.
-        </p>
-
-        <div class="hero-ctas">
-          <a href="contact.html" class="btn-primary">Connect With Me!</a>
-          <a href="soccer.html" class="btn-secondary">Watch Film</a>
-        </div>
+        <p class="hero-welcome">Welcome — this is my self-made recruiting site. I'm a full-time college student-athlete at 17; targeting a Junior-year transfer to a DI/DII program in Fall 2027. Take a look at my film, academics, and story below.</p>
+        <div class="hero-ctas"><a href="contact.html" class="btn-primary">Connect With Me!</a><a href="soccer.html" class="btn-secondary">Watch Film</a></div>
       </div>
-
       <div class="hero-media reveal-right">
         <div class="carousel" id="carousel">
-
-          <!--
-            IMPORTANT SEO CHANGE:
-            These are now real <img> elements instead of CSS background images.
-            This gives search engines a much better opportunity to discover
-            and understand the photographs.
-          -->
-
-          <div class="slide active">
-            <img
-              src="media/tyler-puetzer-soccer-night.jpg"
-              alt="Tyler Puetzer soccer player portrait"
-              width="1200"
-              height="800"
-              loading="eager"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:center 60%;"
-            />
-          </div>
-
-          <div class="slide">
-            <img
-              src="media/tyler-puetzer-bibicycle-kick.jpg"
-              alt="Tyler Puetzer playing soccer"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:center 20%;"
-            />
-          </div>
-
-          <div class="slide">
-            <img
-              src="media/tyler-puetzer-soccer-volley.jpg"
-              alt="Tyler Puetzer competing in soccer"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:center center;"
-            />
-          </div>
-
-          <div class="slide">
-            <img
-              src="media/Tyler-puetzer-sheild-award.jpg"
-              alt="Tyler Puetzer soccer action photo"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:center center;"
-            />
-          </div>
-
-          <div class="slide">
-            <img
-              src="media/tyler-puetzer-snow-odp.jpg"
-              alt="Tyler Puetzer playing competitive soccer"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:40% center;"
-            />
-          </div>
-
-          <div class="slide">
-            <img
-              src="media/tyler-puetzer-leadership.jpg"
-              alt="Tyler Puetzer soccer graphic"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:center center;"
-            />
-          </div>
-
-          <div class="slide">
-            <img
-              src="media/tyler-puetzer-soccer-kick.jp"
-              alt="Tyler Puetzer soccer game photo"
-              width="1200"
-              height="800"
-              loading="lazy"
-              decoding="async"
-              style="width:100%; height:100%; object-fit:cover; object-position:center center;"
-            />
-          </div>
-
-          <button
-            class="carousel-arrow prev"
-            id="prevBtn"
-            aria-label="Previous slide"
-          >&#8249;</button>
-
-          <button
-            class="carousel-arrow next"
-            id="nextBtn"
-            aria-label="Next slide"
-          >&#8250;</button>
-
+          <div class="slide active"><img src="media/tyler-puetzer-soccer.png" alt="Tyler Puetzer soccer player" width="1200" height="800" loading="eager" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:center 60%;" /></div>
+          <div class="slide"><img src="media/tyler-puetzer-snow-odp.jpg" alt="Tyler Puetzer playing soccer in an ODP tournament" width="1200" height="800" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:center 20%;" /></div>
+          <div class="slide"><img src="media/tyler-puetzer-soccer-kick.jpg" alt="Tyler Puetzer kicking a soccer ball" width="1200" height="800" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:center center;" /></div>
+          <div class="slide"><img src="media/tyler-puetzer-soccer-volley.jpg" alt="Tyler Puetzer hitting a soccer volley" width="1200" height="800" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:center center;" /></div>
+          <div class="slide"><img src="media/tyler-puetzer-soccer-drible2.png" alt="Tyler Puetzer dribbling a soccer ball" width="1200" height="800" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:40% center;" /></div>
+          <div class="slide"><img src="media/tyler-puetzer-soccer-night.jpg" alt="Tyler Puetzer playing soccer at night" width="1200" height="800" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:center center;" /></div>
+          <div class="slide"><img src="media/tyler-puetzer-bibicycle-kick.jpg" alt="Tyler Puetzer performing a bicycle kick" width="1200" height="800" loading="lazy" decoding="async" style="width:100%; height:100%; object-fit:cover; object-position:center center;" /></div>
+          <button class="carousel-arrow prev" id="prevBtn" aria-label="Previous slide">&#8249;</button>
+          <button class="carousel-arrow next" id="nextBtn" aria-label="Next slide">&#8250;</button>
           <div class="carousel-dots" id="carouselDots">
-            <button class="dot active" data-index="0" aria-label="Slide 1"></button>
-            <button class="dot" data-index="1" aria-label="Slide 2"></button>
-            <button class="dot" data-index="2" aria-label="Slide 3"></button>
-            <button class="dot" data-index="3" aria-label="Slide 4"></button>
-            <button class="dot" data-index="4" aria-label="Slide 5"></button>
-            <button class="dot" data-index="5" aria-label="Slide 6"></button>
-            <button class="dot" data-index="6" aria-label="Slide 7"></button>
+            <button class="dot active" data-index="0" aria-label="Slide 1"></button><button class="dot" data-index="1" aria-label="Slide 2"></button><button class="dot" data-index="2" aria-label="Slide 3"></button><button class="dot" data-index="3" aria-label="Slide 4"></button><button class="dot" data-index="4" aria-label="Slide 5"></button><button class="dot" data-index="5" aria-label="Slide 6"></button><button class="dot" data-index="6" aria-label="Slide 7"></button>
           </div>
         </div>
       </div>
-
     </div>
   </section>
-
-  <!-- ============================================================
-       QUICK STAT STRIP
-   =============================================================== -->
   <section class="stat-strip">
-
-    <div class="stat reveal-up" style="transition-delay:0s;">
-      <span class="stat-num">3.9</span>
-      <span class="stat-label">GPA / 4.0</span>
-    </div>
-
-    <div class="stat reveal-up" style="transition-delay:0.08s;">
-      <span class="stat-num">Wake Tech</span>
-      <span class="stat-label">Community College</span>
-    </div>
-
-    <div class="stat reveal-up" style="transition-delay:0.16s;">
-      <span class="stat-num">Marketing</span>
-      <span class="stat-label">Major</span>
-    </div>
-
-    <div class="stat reveal-up" style="transition-delay:0.24s;">
-      <span class="stat-num">NCFC</span>
-      <span class="stat-label">Club</span>
-    </div>
-
-    <div class="stat reveal-up" style="transition-delay:0.32s;">
-      <span class="stat-num">67</span>
-      <span class="stat-label">Credits Planned</span>
-    </div>
-
+    <div class="stat reveal-up" style="transition-delay:0s;"><span class="stat-num">3.9</span><span class="stat-label">GPA / 4.0</span></div>
+    <div class="stat reveal-up" style="transition-delay:0.08s;"><span class="stat-num">Wake Tech</span><span class="stat-label">Community College</span></div>
+    <div class="stat reveal-up" style="transition-delay:0.16s;"><span class="stat-num">Marketing</span><span class="stat-label">Major</span></div>
+    <div class="stat reveal-up" style="transition-delay:0.24s;"><span class="stat-num">NCFC</span><span class="stat-label">Club</span></div>
+    <div class="stat reveal-up" style="transition-delay:0.32s;"><span class="stat-num">67</span><span class="stat-label">Credits Planned</span></div>
   </section>
-
-  <!-- ============================================================
-       POSITIONAL GRAPHIC
-   =============================================================== -->
   <section class="position-section">
-
-    <div class="section-heading reveal-up">
-      <p class="section-eyebrow">Where I Play</p>
-
-      <h2>Built for the final third</h2>
-
-      <p class="section-sub">
-        Most comfortable as an attacking midfielder, or in the front line,
-        but can play every position on the field.
-      </p>
-    </div>
-
+    <div class="section-heading reveal-up"><p class="section-eyebrow">Where I Play</p><h2>Built for the final third</h2><p class="section-sub">Most comfortable as an attacking midfielder, or in the front line, but can play every position on the field.</p></div>
     <div class="tactics-board reveal-up">
-
-      <svg viewBox="0 0 400 600" class="pitch-svg" aria-hidden="true">
-        <rect
-          x="10"
-          y="10"
-          width="380"
-          height="580"
-          fill="none"
-          stroke="#2c4a78"
-          stroke-width="2"
-        />
-        <line
-          x1="10"
-          y1="300"
-          x2="390"
-          y2="300"
-          stroke="#2c4a78"
-          stroke-width="2"
-        />
-        <circle
-          cx="200"
-          cy="300"
-          r="55"
-          fill="none"
-          stroke="#2c4a78"
-          stroke-width="2"
-        />
-        <rect
-          x="90"
-          y="10"
-          width="220"
-          height="90"
-          fill="none"
-          stroke="#2c4a78"
-          stroke-width="2"
-        />
-        <rect
-          x="90"
-          y="500"
-          width="220"
-          height="90"
-          fill="none"
-          stroke="#2c4a78"
-          stroke-width="2"
-        />
-      </svg>
-
-      <div class="marker marker-am">
-        <span class="marker-dot"></span>
-        <span class="marker-label">CAM <em>Primary</em></span>
-      </div>
-
-      <div class="marker marker-fw">
-        <span class="marker-dot"></span>
-        <span class="marker-label">FW <em>Secondary</em></span>
-      </div>
-
-      <div class="marker marker-dm">
-        <span class="marker-dot"></span>
-        <span class="marker-label">CDM <em>Third</em></span>
-      </div>
-
+      <svg viewBox="0 0 400 600" class="pitch-svg" aria-hidden="true"><rect x="10" y="10" width="380" height="580" fill="none" stroke="#2c4a78" stroke-width="2" /><line x1="10" y1="300" x2="390" y2="300" stroke="#2c4a78" stroke-width="2" /><circle cx="200" cy="300" r="55" fill="none" stroke="#2c4a78" stroke-width="2" /><rect x="90" y="10" width="220" height="90" fill="none" stroke="#2c4a78" stroke-width="2" /><rect x="90" y="500" width="220" height="90" fill="none" stroke="#2c4a78" stroke-width="2" /></svg>
+      <div class="marker marker-am"><span class="marker-dot"></span><span class="marker-label">CAM <em>Primary</em></span></div>
+      <div class="marker marker-fw"><span class="marker-dot"></span><span class="marker-label">FW <em>Secondary</em></span></div>
+      <div class="marker marker-dm"><span class="marker-dot"></span><span class="marker-label">CDM <em>Third</em></span></div>
     </div>
-
   </section>
-
-  <!-- ============================================================
-       EXPLORE SECTION
-   =============================================================== -->
   <section class="explore">
-
-    <div class="section-heading reveal-up">
-      <p class="section-eyebrow">Explore</p>
-      <h2>Get the full picture</h2>
-    </div>
-
+    <div class="section-heading reveal-up"><p class="section-eyebrow">Explore</p><h2>Get the full picture</h2></div>
     <div class="card-grid">
-
-      <a href="about.html" class="explore-card reveal-left">
-        <span class="card-tag">01</span>
-        <h3>About Me</h3>
-        <p>My story on and off the pitch — who I am beyond the stats.</p>
-        <span class="card-arrow">&rarr;</span>
-      </a>
-
-      <a href="soccer.html" class="explore-card reveal-up">
-        <span class="card-tag">02</span>
-        <h3>Soccer</h3>
-        <p>
-          Film, positions, club &amp; school teams, career history,
-          and athletic honors.
-        </p>
-        <span class="card-arrow">&rarr;</span>
-      </a>
-
-      <a href="academics.html" class="explore-card reveal-right">
-        <span class="card-tag">03</span>
-        <h3>Academics</h3>
-        <p>Plans, coursework, research projects, and academic honors.</p>
-        <span class="card-arrow">&rarr;</span>
-      </a>
-
+      <a href="about.html" class="explore-card reveal-left"><span class="card-tag">01</span><h3>About Me</h3><p>My story on and off the pitch — who I am beyond the stats.</p><span class="card-arrow">&rarr;</span></a>
+      <a href="soccer.html" class="explore-card reveal-up"><span class="card-tag">02</span><h3>Soccer</h3><p>Film, positions, club &amp; school teams, career history, and athletic honors.</p><span class="card-arrow">&rarr;</span></a>
+      <a href="academics.html" class="explore-card reveal-right"><span class="card-tag">03</span><h3>Academics</h3><p>Plans, coursework, research projects, and academic honors.</p><span class="card-arrow">&rarr;</span></a>
     </div>
   </section>
-
-  <!-- ============================================================
-       RECRUITING PROFILES
-   =============================================================== -->
   <section class="recruiting">
-
-    <div class="section-heading light reveal-up">
-      <p class="section-eyebrow">Follow My Recruitment</p>
-      <h2>Find me on the platforms coaches use</h2>
-    </div>
-
+    <div class="section-heading light reveal-up"><p class="section-eyebrow">Follow My Recruitment</p><h2>Find me on the platforms coaches use</h2></div>
     <div class="recruiting-grid">
-
-      <a
-        href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910"
-        target="_blank"
-        rel="noopener"
-        class="recruit-card reveal-left"
-      >
-        <span>NCSA</span>
-        <small>Recruiting Profile</small>
-      </a>
-
-      <a
-        href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3"
-        target="_blank"
-        rel="noopener"
-        class="recruit-card reveal-up"
-      >
-        <span>FieldLevel</span>
-        <small>Recruiting Profile</small>
-      </a>
-
-      <a
-        href="https://my.sportsrecruits.com/athlete/tyler_puetzer"
-        target="_blank"
-        rel="noopener"
-        class="recruit-card reveal-up"
-      >
-        <span>SportsRecruits</span>
-        <small>Recruiting Profile</small>
-      </a>
-
-      <a
-        href="#"
-        target="_blank"
-        rel="noopener"
-        class="recruit-card reveal-right"
-      >
-        <span>Play2Pitch</span>
-        <small>Recruiting Profile</small>
-      </a>
-
+      <a href="https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910" target="_blank" rel="noopener" class="recruit-card reveal-left"><span>NCSA</span><small>Recruiting Profile</small></a>
+      <a href="https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3" target="_blank" rel="noopener" class="recruit-card reveal-up"><span>FieldLevel</span><small>Recruiting Profile</small></a>
+      <a href="https://my.sportsrecruits.com/athlete/tyler_puetzer" target="_blank" rel="noopener" class="recruit-card reveal-up"><span>SportsRecruits</span><small>Recruiting Profile</small></a>
+      <a href="#" target="_blank" rel="noopener" class="recruit-card reveal-right"><span>Play2Pitch</span><small>Recruiting Profile</small></a>
     </div>
   </section>
-
-  <!-- ============================================================
-       FOOTER
-   =============================================================== -->
   <footer class="footer">
-
     <div class="footer-inner">
-
-      <!-- Left: brand + copyright -->
-      <div class="footer-brand">
-        <p class="footer-name">Tyler Puetzer</p>
-
-        <p class="footer-copy">
-          &copy; <span id="year"></span> Built for college recruitment.
-        </p>
-      </div>
-
+      <div class="footer-brand"><p class="footer-name">Tyler Puetzer</p><p class="footer-copy">&copy; <span id="year"></span> Built for college recruitment.</p></div>
       <div class="footer-address">
-
-        <p class="footer-line">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            aria-hidden="true"
-          >
-            <path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/>
-            <circle cx="12" cy="10" r="2.5"/>
-          </svg>
-
-          Rolesville, NC
-        </p>
-
-        <p class="footer-line">
-          <svg
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            aria-hidden="true"
-          >
-            <rect x="3" y="5" width="18" height="14" rx="2"/>
-            <path d="M3 7l9 6 9-6"/>
-          </svg>
-
-          <a href="contact.html">
-            tyler.puetzer@gmail.com
-          </a>
-        </p>
-
+        <p class="footer-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 21s-7-6.1-7-11a7 7 0 1 1 14 0c0 4.9-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>Rolesville, NC</p>
+        <p class="footer-line"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><a href="contact.html">tyler.puetzer@gmail.com</a></p>
       </div>
-
       <div class="footer-social">
-
-        <a
-          href="https://www.linkedin.com/in/tyler-puetzer"
-          target="_blank"
-          rel="noopener"
-          class="social-icon"
-          aria-label="LinkedIn profile"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            width="20"
-            height="20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/>
-          </svg>
-        </a>
-
-        <a
-          href="https://www.youtube.com/@TylerPuetzer"
-          target="_blank"
-          rel="noopener"
-          class="social-icon"
-          aria-label="YouTube channel"
-        >
-          <svg
-            viewBox="0 0 24 24"
-            width="20"
-            height="20"
-            fill="currentColor"
-            aria-hidden="true"
-          >
-            <path d="M21.6 7.2s-.21-1.5-.86-2.16c-.82-.87-1.74-.87-2.16-.92C15.6 4 12 4 12 4h-.01s-3.6 0-6.58.12c-.42.05-1.34.05-2.16.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 8.96 2.18 10.72v1.55c0 1.76.22 3.53.22 3.53s.21 1.5.86 2.16c.82.87 1.9.87 2.38.96 1.72.17 6.58.22 6.58.22s3.6 0 6.58-.12c.42-.05 1.34-.05 2.16-.92.65-.66.86-2.16.86-2.16s.22-1.77.22-3.53v-1.55c0-1.76-.22-3.53-.22-3.53zM9.6 15.6V8.4l5.77 3.6-5.77 3.6z"/>
-          </svg>
-        </a>
-
+        <a href="https://www.linkedin.com/in/tyler-puetzer" target="_blank" rel="noopener" class="social-icon" aria-label="LinkedIn profile"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45z"/></svg></a>
+        <a href="https://www.youtube.com/@TylerPuetzer" target="_blank" rel="noopener" class="social-icon" aria-label="YouTube channel"><svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M21.6 7.2s-.21-1.5-.86-2.16c-.82-.87-1.74-.87-2.16-.92C15.6 4 12 4 12 4h-.01s-3.6 0-6.58.12c-.42.05-1.34.05-2.16.92C2.6 5.7 2.4 7.2 2.4 7.2S2.18 8.96 2.18 10.72v1.55c0 1.76.22 3.53.22 3.53s.21 1.5.86 2.16c.82.87 1.9.87 2.38.96 1.72.17 6.58.22 6.58.22s3.6 0 6.58-.12c.42-.05 1.34-.05 2.16-.92.65-.66.86-2.16.86-3.53v-1.55c0-1.76-.22-3.53-.22-3.53zM9.6 15.6V8.4l5.77 3.6-5.77 3.6z"/></svg></a>
       </div>
-
     </div>
   </footer>
-
   <script src="script.js"></script>
-
 </body>
 </html>

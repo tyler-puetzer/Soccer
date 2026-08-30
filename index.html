@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
@@ -7,6 +8,7 @@
   <meta name="description" content="Official website of Tyler Puetzer, a Wake Tech student, soccer player, and marketing major. Explore his academics, soccer experience, achievements, projects, and recruiting profile." />
   <meta name="author" content="Tyler Puetzer" />
   <meta name="robots" content="index, follow, max-image-preview:large" />
+  <link rel="canonical" href="https://tyler-puetzer.github.io/Soccer/" />
   <link rel="icon" type="image/png" href="https://images.vexels.com/media/users/3/143402/isolated/preview/afbbf15d5e82a1c4fb5a55c4eacf3003-graduation-cap-icon.png" />
   <link rel="shortcut icon" type="image/png" href="https://images.vexels.com/media/users/3/143402/isolated/preview/afbbf15d5e82a1c4fb5a55c4eacf3003-graduation-cap-icon.png" />
   <meta property="og:type" content="website" />
@@ -19,28 +21,76 @@
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Tyler Puetzer | Student, Soccer Player &amp; Marketing Major" />
   <meta name="twitter:description" content="Official website of Tyler Puetzer featuring his soccer career, academics, achievements, projects, and recruiting information." />
+
+  <!-- Structured data for search engines and AI systems -->
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Tyler Puetzer",
-    "url": "https://tyler-puetzer.github.io/Soccer/",
-    "image": "https://tyler-puetzer.github.io/Soccer/media/tyler.puetzer.soccer.png",
-    "jobTitle": "Student-Athlete",
-    "description": "College student-athlete at Wake Technical Community College studying marketing and pursuing a junior-year transfer to a four-year university.",
-    "alumniOf": {
-      "@type": "EducationalOrganization",
-      "name": "Wake Technical Community College"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/tyler-puetzer",
-      "https://www.youtube.com/@TylerPuetzer",
-      "https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910",
-      "https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3",
-      "https://my.sportsrecruits.com/athlete/tyler_puetzer"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://tyler-puetzer.github.io/Soccer/#website",
+        "url": "https://tyler-puetzer.github.io/Soccer/",
+        "name": "Tyler Puetzer",
+        "description": "Official website of Tyler Puetzer featuring his soccer career, academics, achievements, projects, and recruiting information.",
+        "publisher": {
+          "@id": "https://tyler-puetzer.github.io/Soccer/#person"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://tyler-puetzer.github.io/Soccer/#webpage",
+        "url": "https://tyler-puetzer.github.io/Soccer/",
+        "name": "Tyler Puetzer | Student, Soccer Player & Marketing Major",
+        "description": "Official website of Tyler Puetzer, a Wake Tech student, soccer player, and marketing major.",
+        "isPartOf": {
+          "@id": "https://tyler-puetzer.github.io/Soccer/#website"
+        },
+        "about": {
+          "@id": "https://tyler-puetzer.github.io/Soccer/#person"
+        },
+        "mainEntity": {
+          "@id": "https://tyler-puetzer.github.io/Soccer/#person"
+        }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://tyler-puetzer.github.io/Soccer/#person",
+        "name": "Tyler Puetzer",
+        "url": "https://tyler-puetzer.github.io/Soccer/",
+        "image": "https://tyler-puetzer.github.io/Soccer/media/tyler.puetzer.soccer.png",
+        "jobTitle": "Student-Athlete",
+        "description": "College student-athlete at Wake Technical Community College studying marketing and pursuing a junior-year transfer to a four-year university.",
+        "alumniOf": [
+          {
+            "@type": "EducationalOrganization",
+            "name": "Wake Technical Community College"
+          },
+          {
+            "@type": "EducationalOrganization",
+            "name": "Vance-Granville Community College"
+          }
+        ],
+        "knowsAbout": [
+          "Marketing",
+          "Soccer",
+          "Digital Marketing",
+          "Graphic Design",
+          "Website Development"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/tyler-puetzer",
+          "https://www.youtube.com/@TylerPuetzer",
+          "https://recruit-match.ncsasports.org/clientrms/athlete_profiles/18172910",
+          "https://www.fieldlevel.com/app/profile/tyler.puetzer/soccermen?m=3",
+          "https://my.sportsrecruits.com/athlete/tyler_puetzer"
+        ]
+      }
     ]
   }
   </script>
+
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link href="https://fonts.googleapis.com/css2?family=Anton&amp;family=Inter:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@500;700&amp;display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />

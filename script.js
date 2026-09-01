@@ -1,8 +1,8 @@
 //
 // SITE FAVICON
-// Replace any legacy favicon references with the site's custom icon.
+// Use the site's custom JPG favicon instead of any legacy favicon references.
 //
-const siteIconPath = 'media/site-icon.png';
+const siteIconPath = 'media/site-icon.jpg';
 
 document.querySelectorAll('link[rel~="icon"], link[rel="shortcut icon"]').forEach(link => {
   link.remove();
@@ -10,7 +10,7 @@ document.querySelectorAll('link[rel~="icon"], link[rel="shortcut icon"]').forEac
 
 const siteIcon = document.createElement('link');
 siteIcon.rel = 'icon';
-siteIcon.type = 'image/png';
+siteIcon.type = 'image/jpeg';
 siteIcon.href = siteIconPath;
 document.head.appendChild(siteIcon);
 
@@ -37,7 +37,7 @@ if (navToggle && navLinks) {
 }
 
 
-//
+// 
 // HERO MEDIA CAROUSEL
 //
 
@@ -193,9 +193,9 @@ if ('IntersectionObserver' in window) {
 }
 
 
-//
+// 
 // FOOTER YEAR
-//
+// 
 
 const yearEl =
   document.getElementById('year');
